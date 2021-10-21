@@ -26,7 +26,6 @@ remotes::install_github("etc5523-2021/r-package-takehome-NishthaArora3008")
 ```
 
 
-
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
@@ -35,7 +34,7 @@ This is a basic example which shows you how to solve a common problem:
 library(datasets)
 library(tidyverse)
 
-install.packages("urbanC")
+
 library(urbanC)
 ```
 
@@ -67,5 +66,5 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, fill = Species)) +
 ```{r}
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Sepal.Length)) +
   geom_point() +
-  scale_colour_warmCrush_seq_c(amount = -0.7)
+  scale_colour_warmCrush_seq_c(amount = 0.7)
 ```

@@ -8,7 +8,7 @@ scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 
 
   low = warmCrush_colours[[name]]
 
-  high = darken(warmCrush_colours[[name]], amount = amount, space = "combined", fixup = TRUE)
+  high = lighten(warmCrush_colours[[name]], amount = amount, space = "combined", fixup = TRUE)
 
   if (direction < 0){
     temp = low
