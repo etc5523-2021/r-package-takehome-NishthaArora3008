@@ -1,5 +1,14 @@
 
-#' @export
+#' warmCrush colours
+#' @import ggplot2
+#' @import colorspace
+#'
+#'
+#' @examples
+#' warmCrush_colours
+#' @rdname warmCrush_colours
+#' @export warmCrush_colours
+#'
 warmCrush_colours <- list(
 
   "Copper" = "#595952",
@@ -26,7 +35,8 @@ warmCrush_colours <- list(
 #' @example
 #' warmCrush_pal(primary = "Green", other = "Copper", direction = 1)(2)
 #'
-#' @export warmCrush_pal
+#' @rdname warmCrush_pal
+#' @export
 #'
 
 warmCrush_pal <- function(

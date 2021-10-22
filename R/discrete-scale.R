@@ -1,5 +1,5 @@
 
-#' @title Colours for discrete value in a plot.
+#' Colours for discrete value in a plot.
 #'
 #' @param primary This is the primary colour chosen for plotting.
 #' @param other This other colour for the palette.
@@ -11,8 +11,8 @@
 #' @example
 #' scale_colour_warmCrush_d(direction = -1)
 #'
-#'
-#' @export scale_colour_warmCrush_d
+#' @rdname scale_colour_warmCrush_d
+#' @export
 #'
 
 
@@ -27,7 +27,21 @@ scale_colour_warmCrush_d <- function(
   )
 }
 
-#'@export
+#' Colors for discrete value in a plot.
+#'
+#' @param primary This is the primary color chosen for plotting.
+#' @param other This other color for the palette.
+#' @param direction This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.
+#'
+#'
+#' @return Color outline for the plots
+#'
+#' @example
+#' scale_color_warmCrush_d(direction = -1)
+#'
+#' @rdname scale_color_warmCrush_d
+#' @export
+#'
 scale_color_warmCrush_d <- scale_colour_warmCrush_d
 
 
@@ -43,8 +57,8 @@ scale_color_warmCrush_d <- scale_colour_warmCrush_d
 #' @example
 #' scale_fill_warmCrush_d(direction = -1)
 #'
-#'
-#' @export scale_fill_warmCrush_d
+#' @rdname scale_fill_warmCrush_d
+#' @export
 
 
 scale_fill_warmCrush_d <- function(
