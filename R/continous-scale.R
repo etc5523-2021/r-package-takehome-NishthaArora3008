@@ -1,6 +1,6 @@
 
 
-scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 0.2, ...) {
+scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 0.7, ...) {
 
   if (!name %in% names(warmCrush_colours))
   {

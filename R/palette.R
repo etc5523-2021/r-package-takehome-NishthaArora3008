@@ -6,10 +6,9 @@
 #'
 #' @section Arguments
 #' @section primary the baseline color for continuous scale
-#' @param direction: a numeric value to set the direction of the color scale \newline if direction is < 0 the color list is reversed
+#' @param direction: a numeric value to set the direction of the color scale.If direction is < 0 the color list is reversed.
 #'
 #' @details Default colors are generated using this warmCrush palette.
-#' @seealso \code{\link{warmCrush_pal}} \code{\link[ggplot2]{discrete_scale}} \code{\link[ggplot2]{scale_colour_warmCrush_seq_c}}
 #'
 #'
 #'

@@ -13,7 +13,7 @@ An object of class \code{list} of length 8.
 warmCrush_colours
 }
 \arguments{
-\item{direction:}{a numeric value to set the direction of the color scale \newline if direction is < 0 the color list is reversed}
+\item{direction:}{a numeric value to set the direction of the color scale.If direction is < 0 the color list is reversed.}
 }
 \description{
 urbanC Color Palette:
@@ -31,7 +31,4 @@ NA
 NA
 }
 
-\seealso{
-\code{\link{warmCrush_pal}} \code{\link[ggplot2]{discrete_scale}} \code{\link[ggplot2]{scale_colour_warmCrush_seq_c}}
-}
 \keyword{datasets}
