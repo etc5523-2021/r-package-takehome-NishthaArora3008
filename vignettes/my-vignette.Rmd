@@ -7,44 +7,79 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
 
-```{r setup}
+```{r libraries, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(ggplot2)
 library(palmerpenguins)
 library(urbanC)
 ```
 
-```{r}
-library(unikn)
-seecol("warmCrush_colours")
+## Overview of package
+The name of the package is **urbanC** and contains the palette *warnCrush* which has 8 colours. The goal of the package is to introduce the urban modern city life colours to R which give a soothing effect.
+
+The colours of the *warmCrush* palette are displayed below:
+
+```{r, include=FALSE}
+warmCrush_pal()(6)
 ```
 
-```{r}
-view(penguins)
+```{r pie, echo=FALSE, warning=FALSE, message=FALSE}
+pal <- warmCrush_pal()(8)
+par(mar = rep(0, 4))
+pie(rep(1, length(pal)), col = pal)
+
 ```
 
-```{r}
-ggplot(penguins, aes(body_mass_g, flipper_length_mm, color = species)) +
+## Usage
+
+```{r, finding_data, include=FALSE}
+data(package = 'palmerpenguins')
+```
+
+### Discrete Values plot (using colour/color)
+
+#### use **scale_colour_warmCrush_d()** or **scale_color_warmCrush_d()**
+
+```{r, include=FALSE}
+penguins <- penguins %>% na.omit()
+```
+
+```{r discrete1, out.width='60%', fig.width=4, fig.length=8}
+#'colour' or 'color' both can be used.
+ggplot(penguins, aes(x=year, y= bill_length_mm, colour = island)) +
   geom_bar(stat = "identity") +
-  scale_color_warmCrush_d()
+  labs(title = "The length of bills for penguins")+
+  ylab("bill length")+
+  scale_colour_warmCrush_d()
 ```
 
-```{r}
-ggplot(penguins, aes(body_mass_g, flipper_length_mm, color = body_mass_g)) +
-  geom_point() +
-  scale_colour_warmCrush_seq_c ()
-```
+### Discrete Values plot (using fill and direction)
 
-```{r}
-ggplot(penguins, aes(body_mass_g, flipper_length_mm, fill = species)) +
+```{r fill, out.width='60%', fig.width=4, fig.length=8}
+ggplot(penguins, aes(x=year, y= bill_length_mm, fill = island)) +
   geom_bar(stat = "identity") +
-  scale_fill_warmCrush_d()
+  labs(title = "The length of bills for penguins")+
+  ylab("bill length")+
+  scale_fill_warmCrush_d(direction = -1)
+```
+
+### Continuous Values plot (using colour/color)
+
+```{r continuous,  out.width='60%', fig.width=4, fig.length=8}
+#'colour' or 'color' both can be used.
+ggplot(penguins, aes(x=flipper_length_mm, y= body_mass_g, colour = bill_length_mm)) +
+  geom_point()+
+    labs(title = "Correlation between bill and flipper length")+
+  ylab("bill length")+
+  xlab("flipper length")+
+  scale_colour_warmCrush_seq_c()
+
 ```
 

@@ -2,16 +2,20 @@
 % Please edit documentation in R/palette.R
 \name{warmCrush_pal}
 \alias{warmCrush_pal}
-\title{this is title}
+\title{urbanC colour palette warmCrush}
 \usage{
 warmCrush_pal(primary = "Green", other = "Copper", direction = 1)
 }
 \arguments{
-\item{direction}{a numeric value to set the direction of the color scale if direction is < 0 switch the direction}
+\item{primary}{This is the primary colour chosen for plotting.}
+
+\item{other}{This other colour for the palette.}
+
+\item{direction}{This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.}
 }
 \value{
-colour
+colours for the palette
 }
 \description{
-this is title
+urbanC colour palette warmCrush
 }

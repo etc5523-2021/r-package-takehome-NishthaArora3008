@@ -15,13 +15,17 @@ warmCrush_colours <- list(
 
 
 
-#'  this is title
+#'  urbanC colour palette warmCrush
 #'
-#' @param primary
-#' @param other
-#' @param direction a numeric value to set the direction of the color scale if direction is < 0 switch the direction
+#' @param primary This is the primary colour chosen for plotting.
+#' @param other This other colour for the palette.
+#' @param direction This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.
 #'
-#' @return colour
+#' @return colours for the palette
+#'
+#' @example
+#' warmCrush_pal(primary = "Green", other = "Copper", direction = 1)(2)
+#'
 #' @export warmCrush_pal
 #'
 
@@ -33,7 +37,7 @@ warmCrush_pal <- function(
   stopifnot(primary %in% names(warmCrush_colours))
 
   function(n) {
-    if (n > 6) warning("The no. of observations is greater than than palette colors")
+    if (n > 8) warning("The no. of observations is greater than than palette colors")
 
     if (n == 2) {
       other <- if (!other %in% names(warmCrush_colours)) {

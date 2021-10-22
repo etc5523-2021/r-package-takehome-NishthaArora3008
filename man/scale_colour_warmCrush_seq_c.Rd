@@ -2,18 +2,20 @@
 % Please edit documentation in R/continous-scale.R
 \name{scale_colour_warmCrush_seq_c}
 \alias{scale_colour_warmCrush_seq_c}
-\title{Title}
+\title{Colours for continuous scale}
 \usage{
 scale_colour_warmCrush_seq_c(name = "Rust", direction = 1, amount = 0.7)
 }
 \arguments{
-\item{direction}{a numeric value to set the direction of the color scale if direction is < 0 switch the direction}
+\item{name}{Name of the colour which is default.}
 
-\item{amount}{scales of the colour}
+\item{direction}{This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.}
+
+\item{amount}{This is the level of luminance.A negative value changes the direction of luminance.}
 }
 \value{
-colour
+Colour in the plot with different levels of luminance.
 }
 \description{
-Title
+Colours for continuous scale
 }

@@ -1,12 +1,15 @@
-
-
-#' Title
+#' Colours for continuous scale
 #'
-#' @param name
-#' @param direction a numeric value to set the direction of the color scale if direction is < 0 switch the direction
-#' @param amount scales of the colour
+#' @param name Name of the colour which is default.
+#' @param direction This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.
+#' @param amount This is the level of luminance.A negative value changes the direction of luminance.
 #'
-#' @return colour
+#' @return Colour in the plot with different levels of luminance.
+#'
+#' @example
+#' scale_colour_warmCrush_seq_c(name="Rust", direction = 1, amount=0.7)
+#'
+#'
 #' @export scale_colour_warmCrush_seq_c
 
 

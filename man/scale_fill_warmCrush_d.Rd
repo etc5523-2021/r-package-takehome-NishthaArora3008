@@ -2,16 +2,20 @@
 % Please edit documentation in R/discrete-scale.R
 \name{scale_fill_warmCrush_d}
 \alias{scale_fill_warmCrush_d}
-\title{Title}
+\title{Fill for discrete value in a plot.}
 \usage{
 scale_fill_warmCrush_d(primary = "Green", other = "Copper", direction = 1)
 }
 \arguments{
-\item{direction}{a numeric value to set the direction of the color scale if direction is < 0 switch the direction}
+\item{primary}{This is the primary colour chosen for plotting.}
+
+\item{other}{This other colour for the palette.}
+
+\item{direction}{This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.}
 }
 \value{
-fill
+colours inside the plot
 }
 \description{
-Title
+Fill for discrete value in a plot.
 }
