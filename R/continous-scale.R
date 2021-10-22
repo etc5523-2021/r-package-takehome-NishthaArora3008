@@ -1,6 +1,16 @@
 
 
-scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 0.7, ...) {
+#' Title
+#'
+#' @param name
+#' @param direction a numeric value to set the direction of the color scale if direction is < 0 switch the direction
+#' @param amount scales of the colour
+#'
+#' @return colour
+#' @export scale_colour_warmCrush_seq_c
+
+
+scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 0.7) {
 
   if (!name %in% names(warmCrush_colours))
   {
@@ -20,7 +30,6 @@ scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 
   }
 
   ggplot2::scale_color_gradient(
-    ...,
     low = low,
     high = high,
     na.value = "gray",
@@ -28,5 +37,5 @@ scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 
   )
 }
 
-
+#'@export
 scale_color_warmCrush_seq_c <- scale_colour_warmCrush_seq_c

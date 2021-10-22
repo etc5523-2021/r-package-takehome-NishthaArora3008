@@ -1,0 +1,50 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(tidyverse)
+library(ggplot2)
+library(palmerpenguins)
+library(urbanC)
+```
+
+```{r}
+library(unikn)
+seecol("warmCrush_colours")
+```
+
+```{r}
+view(penguins)
+```
+
+```{r}
+ggplot(penguins, aes(body_mass_g, flipper_length_mm, color = species)) +
+  geom_bar(stat = "identity") +
+  scale_color_warmCrush_d()
+```
+
+```{r}
+ggplot(penguins, aes(body_mass_g, flipper_length_mm, color = body_mass_g)) +
+  geom_point() +
+  scale_colour_warmCrush_seq_c ()
+```
+
+```{r}
+ggplot(penguins, aes(body_mass_g, flipper_length_mm, fill = species)) +
+  geom_bar(stat = "identity") +
+  scale_fill_warmCrush_d()
+```
+

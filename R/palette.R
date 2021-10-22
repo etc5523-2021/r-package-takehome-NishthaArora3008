@@ -1,19 +1,5 @@
-#' @title urbanC Color Palette:
-#'
-#' \code{warmCrush_pal}
-#'
-#'
-#'
-#' @section Arguments
-#' @section primary the baseline color for continuous scale
-#' @param direction: a numeric value to set the direction of the color scale.If direction is < 0 the color list is reversed.
-#'
-#' @details Default colors are generated using this warmCrush palette.
-#'
-#'
-#'
-#' @export warmCrush_pal
 
+#' @export
 warmCrush_colours <- list(
 
   "Copper" = "#595952",
@@ -27,6 +13,17 @@ warmCrush_colours <- list(
 
 )
 
+
+
+#'  this is title
+#'
+#' @param primary
+#' @param other
+#' @param direction a numeric value to set the direction of the color scale if direction is < 0 switch the direction
+#'
+#' @return colour
+#' @export warmCrush_pal
+#'
 
 warmCrush_pal <- function(
   primary = "Green",
