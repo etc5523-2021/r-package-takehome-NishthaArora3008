@@ -33,7 +33,7 @@ warmCrush_colours <- list(
 #' @return colours for the palette
 #'
 #' @example
-#' warmCrush_pal(primary = "Green", other = "Copper", direction = 1)(2)
+#' warmCrush_pal(primary = "Green", other = "Copper", direction = 1)
 #'
 #' @rdname warmCrush_pal
 #' @export

@@ -26,10 +26,6 @@ The name of the package is **urbanC** and contains the palette *warnCrush* which
 
 The colours of the *warmCrush* palette are displayed below:
 
-```{r, include=FALSE}
-warmCrush_pal()(6)
-```
-
 ```{r pie, echo=FALSE, warning=FALSE, message=FALSE}
 pal <- warmCrush_pal()(8)
 par(mar = rep(0, 4))
