@@ -49,9 +49,21 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
 ```
 
 ```{r}
+ggplot(iris, aes(Sepal.Length, Sepal.Width, colour = Species)) +
+  geom_col() +
+  scale_colour_warmCrush_d()
+```
+
+```{r}
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
   geom_col() +
   scale_color_warmCrush_d(direction = -1)
+```
+
+```{r}
+ggplot(iris, aes(Sepal.Length, Sepal.Width, colour = Species)) +
+  geom_col() +
+  scale_colour_warmCrush_d(direction = -1)
 ```
 
 ```{r}
@@ -69,5 +81,11 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width, fill = Species)) +
 ```{r}
 ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Sepal.Length)) +
   geom_point() +
-  scale_colour_warmCrush_seq_c(amount = 0.7)
+  scale_color_warmCrush_seq_c()
+```
+
+```{r}
+ggplot(iris, aes(Sepal.Length, Sepal.Width, colour = Sepal.Length)) +
+  geom_point() +
+  scale_colour_warmCrush_seq_c()
 ```
