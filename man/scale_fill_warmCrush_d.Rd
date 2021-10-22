@@ -8,8 +8,6 @@ scale_fill_warmCrush_d(primary = "Green", other = "Copper", direction = 1)
 }
 \arguments{
 \item{direction}{a numeric value to set the direction of the color scale if direction is < 0 switch the direction}
-
-\item{...}{something happens}
 }
 \value{
 fill

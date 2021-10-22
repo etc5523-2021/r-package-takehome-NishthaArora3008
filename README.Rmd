@@ -21,69 +21,15 @@ The goal of the package **urbanC** is to introduce the new shades to R, used in 
 
 You can install the development version of urbanC with ...
 
-```{r install}
-install.packages("devtools")
+```{r install, eval=FALSE}
 remotes::install_github("etc5523-2021/r-package-takehome-NishthaArora3008")
 ```
-
-
-
-
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
-library(datasets)
-library(tidyverse)
+```{r}
 library(urbanC)
 ```
 
 
-```{r}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
-  geom_col() +
-  scale_color_warmCrush_d()
-```
-
-```{r}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, colour = Species)) +
-  geom_col() +
-  scale_colour_warmCrush_d()
-```
-
-```{r}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) +
-  geom_col() +
-  scale_color_warmCrush_d(direction = -1)
-```
-
-```{r}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, colour = Species)) +
-  geom_col() +
-  scale_colour_warmCrush_d(direction = -1)
-```
-
-```{r}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, fill = Species)) +
-  geom_col() +
-  scale_fill_warmCrush_d()
-```
-
-```{r}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, fill = Species)) +
-  geom_col()+
-    scale_fill_warmCrush_d(direction = -1)
-```
-
-```{r}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Sepal.Length)) +
-  geom_point() +
-  scale_color_warmCrush_seq_c()
-```
-
-```{r}
-ggplot(iris, aes(Sepal.Length, Sepal.Width, colour = Sepal.Length)) +
-  geom_point() +
-  scale_colour_warmCrush_seq_c()
-```

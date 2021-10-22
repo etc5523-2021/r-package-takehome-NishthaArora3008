@@ -31,7 +31,6 @@ scale_color_warmCrush_d <- scale_colour_warmCrush_d
 #' @param primary
 #' @param other
 #' @param direction a numeric value to set the direction of the color scale if direction is < 0 switch the direction
-#' @param ... something happens
 #'
 #' @return fill
 #' @export scale_fill_warmCrush_d
