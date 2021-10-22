@@ -3,6 +3,7 @@
 #' @param name Name of the colour which is default.
 #' @param direction This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.
 #' @param amount This is the level of luminance.A negative value changes the direction of luminance.
+#' @param ... Other themes and functions
 #'
 #' @return Colour in the plot with different levels of luminance.
 #'
@@ -13,7 +14,7 @@
 #' @export
 
 
-scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 0.7) {
+scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 0.7, ...) {
 
   if (!name %in% names(warmCrush_colours))
   {
@@ -37,7 +38,7 @@ scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 
     high = high,
     na.value = "gray",
     aesthetics = "colour"
-  )
+    )
 }
 
 #' Colors for continuous scale
@@ -45,6 +46,7 @@ scale_colour_warmCrush_seq_c <- function(name = "Rust", direction = 1, amount = 
 #' @param name Name of the color which is default.
 #' @param direction This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.
 #' @param amount This is the level of luminance.A negative value changes the direction of luminance.
+#' @param ... Other themes and functions
 #'
 #' @return Color in the plot with different levels of luminance.
 #'

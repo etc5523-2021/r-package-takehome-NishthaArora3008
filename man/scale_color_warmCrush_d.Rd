@@ -4,7 +4,12 @@
 \alias{scale_color_warmCrush_d}
 \title{Colors for discrete value in a plot.}
 \usage{
-scale_color_warmCrush_d(primary = "Green", other = "Copper", direction = 1)
+scale_color_warmCrush_d(
+  primary = "Green",
+  other = "Copper",
+  direction = 1,
+  ...
+)
 }
 \arguments{
 \item{primary}{This is the primary color chosen for plotting.}
@@ -12,6 +17,8 @@ scale_color_warmCrush_d(primary = "Green", other = "Copper", direction = 1)
 \item{other}{This other color for the palette.}
 
 \item{direction}{This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.}
+
+\item{...}{Other themes and functions}
 }
 \value{
 Color outline for the plots

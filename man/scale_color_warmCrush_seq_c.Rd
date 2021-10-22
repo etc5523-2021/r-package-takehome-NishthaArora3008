@@ -4,7 +4,7 @@
 \alias{scale_color_warmCrush_seq_c}
 \title{Colors for continuous scale}
 \usage{
-scale_color_warmCrush_seq_c(name = "Rust", direction = 1, amount = 0.7)
+scale_color_warmCrush_seq_c(name = "Rust", direction = 1, amount = 0.7, ...)
 }
 \arguments{
 \item{name}{Name of the color which is default.}
@@ -12,6 +12,8 @@ scale_color_warmCrush_seq_c(name = "Rust", direction = 1, amount = 0.7)
 \item{direction}{This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.}
 
 \item{amount}{This is the level of luminance.A negative value changes the direction of luminance.}
+
+\item{...}{Other themes and functions}
 }
 \value{
 Color in the plot with different levels of luminance.

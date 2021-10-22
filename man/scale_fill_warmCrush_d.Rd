@@ -4,7 +4,7 @@
 \alias{scale_fill_warmCrush_d}
 \title{Fill for discrete value in a plot.}
 \usage{
-scale_fill_warmCrush_d(primary = "Green", other = "Copper", direction = 1)
+scale_fill_warmCrush_d(primary = "Green", other = "Copper", direction = 1, ...)
 }
 \arguments{
 \item{primary}{This is the primary colour chosen for plotting.}
@@ -12,6 +12,8 @@ scale_fill_warmCrush_d(primary = "Green", other = "Copper", direction = 1)
 \item{other}{This other colour for the palette.}
 
 \item{direction}{This is a numeric value to set the direction of the color scale i.e. if the direction is < 0, the direction of colour changes.}
+
+\item{...}{Other themes and functions}
 }
 \value{
 colours inside the plot
