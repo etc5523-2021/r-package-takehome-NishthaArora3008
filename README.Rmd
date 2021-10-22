@@ -22,8 +22,11 @@ The goal of the package **urbanC** is to introduce the new shades to R, used in 
 You can install the development version of urbanC with ...
 
 ```{r install}
+install.packages("devtools")
 remotes::install_github("etc5523-2021/r-package-takehome-NishthaArora3008")
 ```
+
+
 
 
 ## Example

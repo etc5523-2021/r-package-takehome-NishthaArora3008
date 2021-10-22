@@ -1,3 +1,4 @@
+
 scale_colour_warmCrush_d <- function(
   primary = "Green",
   other = "Copper",
@@ -13,8 +14,6 @@ scale_colour_warmCrush_d <- function(
 
 scale_color_warmCrush_d <- scale_colour_warmCrush_d
 
-
-
 scale_fill_warmCrush_d <- function(
   primary = "Green",
   other = "Copper",
@@ -27,3 +26,4 @@ scale_fill_warmCrush_d <- function(
     ...
   )
 }
+

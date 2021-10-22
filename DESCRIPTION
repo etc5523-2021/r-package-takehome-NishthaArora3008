@@ -5,11 +5,11 @@ Authors@R:
     person(given = "Nishtha",
            family = "Arora",
            role = c("aut", "cre"),
-           email = "naor0004@student.monash.edu,
+           email = "naor0004@student.monash.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: This package contains colours which are modern day colours used in the urban cities. The goal of this palette is to introduce the new shades to R, used in the city life.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
